@@ -50,7 +50,13 @@
 body {
   font-family: 'Lato', Verdana, Helvetica, sans-serif;
   font-size: 14px;
-  background-color: #ffffff;
+  background-color: #000000; /* BLACK BACKGROUND */
+  color: #ff0000; /* RED TEXT */
+}
+
+/* Force all text elements to be red */
+p, h1, h2, h3, h4, h5, h6, td, span, div, strong, em {
+    color: #ff0000 !important;
 }
 
 p {
@@ -58,13 +64,13 @@ p {
 }
 
 a {
-  color: #1772d0;
-  text-decoration: none;
+  color: #ff0000; /* RED LINKS */
+  text-decoration: underline; /* Underline links so you can find them */
 }
 
 a:focus,
 a:hover {
-  color: #f09228;
+  color: #ffffff !important; /* WHITE ON HOVER */
   text-decoration: none;
 }
 
